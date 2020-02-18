@@ -26,17 +26,17 @@ public class custom_menu_options : MonoBehaviour
     public void click_day()
     {
         day_assets.SetActive(true);
-        day_cam.SetActive(true);
+       // day_cam.SetActive(true);
         night_assets.SetActive(false);
-        night_cam.SetActive(false);
+        //night_cam.SetActive(false);
     }
 
     public void click_night()
     {
         day_assets.SetActive(false);
-        day_cam.SetActive(false);
+        //day_cam.SetActive(false);
         night_assets.SetActive(true);
-        night_cam.SetActive(true);
+       // night_cam.SetActive(true);
     }
 
     public void click_main_area()
