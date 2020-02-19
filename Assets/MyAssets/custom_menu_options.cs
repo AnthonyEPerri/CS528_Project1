@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class custom_menu_options : MonoBehaviour
 {
+    //var sceneCamera:Camera = SceneView.lastActiveSceneView.camera;
     public GameObject day_assets;
     public GameObject night_assets;
-    public GameObject day_cam;
-    public GameObject night_cam;
+    //public Camera mainCam;
+    // public GameObject night_cam;
+    //Camera m_MainCamera;
     public GameObject playerPos;
 
     public GameObject day_btn;
@@ -25,6 +27,8 @@ public class custom_menu_options : MonoBehaviour
 
     public void click_day()
     {
+       // Camera.allCameras.clearFlags.Skybox;
+        //m_MainCamera.clearFlags.Skybox;
         day_assets.SetActive(true);
        // day_cam.SetActive(true);
         night_assets.SetActive(false);
@@ -33,6 +37,7 @@ public class custom_menu_options : MonoBehaviour
 
     public void click_night()
     {
+        //Camera.allCameras.clearFlags.Skybox;
         day_assets.SetActive(false);
         //day_cam.SetActive(false);
         night_assets.SetActive(true);
